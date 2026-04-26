@@ -8,6 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Initialize Ubuntu
-        run: |
-          sudo apt update
-          cat /etc/os-release
+        run: |          
+          cat /etc/ssh/sshd_config
