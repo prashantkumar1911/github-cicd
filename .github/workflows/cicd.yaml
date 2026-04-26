@@ -9,3 +9,5 @@ jobs:
     steps:
       - name: Debug via SSH
         uses: mxschmitt/action-tmate@v3
+        with:
+          limit-access-to-actor: true
