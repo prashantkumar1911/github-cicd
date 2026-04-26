@@ -1,11 +1,12 @@
-name: Experience CI/CD
+name: Step 1 - Hello Workflow
+
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Debug via SSH
-        uses: mxschmitt/action-tmate@v3
+    - name: Step 1 - Hello Workflow
+      run: echo "Hello, World!"
