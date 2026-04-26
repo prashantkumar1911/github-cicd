@@ -7,6 +7,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Initialize Ubuntu
-        run: |          
-          cat /etc/ssh/sshd_config
+      - name: Debug via SSH
+        uses: mxschmitt/action-tmate@v3
